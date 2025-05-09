@@ -1,0 +1,189 @@
+body {
+    background: radial-gradient(circle, #171c5a, #040436);
+    margin: 0;
+    display: flex;
+    /* Horizontaal centreren */
+    align-items: center;
+    min-height: 100vh;
+    /* Verticaal centreren */
+    flex-direction: column;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+        Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.kaartNerd {
+    display: flex;
+    height: 12rem;
+    width: 7rem;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #faebd7;
+    padding: 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+        Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #040436;
+    font-weight: 600;
+}
+
+.deNerds {
+    justify-self: center;
+    font-size: 1.3rem;
+    color: white;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.kaartNerd__datum {
+    font-weight: normal;
+    font-size: 10px;
+}
+
+.kaartNerd {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kaartNerd:hover {
+    transform: translateY(-2px) rotate(0.5deg);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    animation: gentleShake 0.4s ease-in-out;
+}
+
+.kaartNerd:hover img {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.computer2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.computer2 p {
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.computerScherm {
+    width: 30rem;
+}
+
+.computerScherm:hover {
+    animation: gentleShake 0.4s ease-in-out;
+}
+
+.middenSectie {
+    width: 100vw;
+    height: auto;
+    color: white;
+    margin: 3rem 0 3rem 0;
+    background-color: #000;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.middenSectie div {
+    margin: 2rem 4rem 2rem 4rem;
+}
+
+.middenSectie h2 {
+    color: white;
+}
+
+@keyframes gentleShake {
+
+    0%,
+    100% {
+        transform: translateY(-2px) rotate(0.5deg);
+    }
+
+    25% {
+        transform: translateY(-2px) rotate(-0.5deg);
+    }
+
+    50% {
+        transform: translateY(-2px) rotate(0.5deg);
+    }
+
+    75% {
+        transform: translateY(-2px) rotate(-0.5deg);
+    }
+}
+
+.footer {
+    background-color: #000;
+    /* Zwart */
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    width: 100vw;
+    height: auto;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    min-width: 50px;
+    height: 20px;
+    display: inline-block;
+}
+
+.ticker-wrapper {
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.ticker {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100%;
+    animation: scroll-left 10s linear infinite;
+}
+
+.ticker p {
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
